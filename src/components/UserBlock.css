@@ -1,11 +1,24 @@
-.avatar{
+.avatar {
     border-radius: 100px;
-    fill: #8D8D8D;
+    background-color: #8D8D8D;
+    width: 90px;
+    height: 90px;
 }
 
-.username{
+.username {
     text-align: center;
 
 }
 
+.userblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
 
+.exit_button {
+    width: 30px;
+    height: 19px;
+    cursor: pointer;
+}

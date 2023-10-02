@@ -1,13 +1,14 @@
 import React from 'react'
-import exbutton from "../../exit.svg" 
+import exbutton from "./exit.svg" 
+import "./UserBlock.css"
 
 function UserBlock() {
   return (
-    <div>
+    <div className='userblock'>
         <div className='avatar'>
             <img src="" alt="" />
         </div>
-        <h3 className='username'>   </h3>
+        <h3 className='username'> username  </h3>
         <img className='exit_button' src={exbutton} alt=''/> 
     </div>
   )
