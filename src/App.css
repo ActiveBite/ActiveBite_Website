@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: Inter;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -48,4 +51,4 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
