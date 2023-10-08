@@ -18,7 +18,7 @@ function Reg() {
         <input type="submit" class="fadeIn_fourth" value="Зарегистрироваться"/>
       </form>
       <div className="form_Footer">
-        <a1>Есть аккаунт?</a1><a className="under_line_Hover" href="#">Авторизироваться</a>
+        <a1>Есть аккаунт?</a1><a className="under_line_Hover" href="http://localhost:3000/Auth">Авторизироваться</a>
       </div>,
       </div>
     </div>

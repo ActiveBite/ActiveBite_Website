@@ -10,7 +10,7 @@ html {
     font-weight: 400;
     font-size: 20px;
     align-items: center;
-    margin: 30px 0px 10px 0px;;
+    margin: 50px 0px 10px 0px;;
   }
   
   a1 {
@@ -21,10 +21,10 @@ html {
   
   h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 550;
     display:inline-block;
-    margin: 25px auto 12px auto;; 
+    margin: 100px auto 12px auto;; 
     color: #000000;
     width: 200px;
     height: 25px;
@@ -46,8 +46,8 @@ html {
     margin: 200px 750px 30px 750px;
     position: relative;
     text-align: center;
-    width: 490;
-    height: 146;
+    width: 480px;
+    height: 450px;
   }
 
   
@@ -79,7 +79,7 @@ html {
   input[type=text], input[type=email], input[type=password]  {
     background-color: #ffffff;
     
-    color: #ffffff;
+    color: #000000;
     padding: 11px 7px;
     text-decoration: none;
     display: inline-block;
@@ -187,17 +187,6 @@ html {
   }
   
 
-  .under_line_Hover:after {
-    display: block;
-    left: 0;
-    bottom: -10px;
-    width: 0;
-    height: 2px;
-    background-color: #01C7AF;
-    content: "";
-    transition: width 0.2s;
-  }
-  
   .under_line_Hover:hover {
     color: #0d0d0d;
   }

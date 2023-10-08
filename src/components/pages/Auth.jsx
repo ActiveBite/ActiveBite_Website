@@ -12,7 +12,7 @@ function Auth() {
         <input type="submit" class="fadeIn_fourth" value="Авторизоваться"/>
       </form>
       <div className="form_Footer">
-        <a>Нет аккаунта?</a><a className="under_line_Hover" href="#">Зарегистрироваться</a>
+        <a>Нет аккаунта?</a><a1 className="under_line_Hover" href="http://localhost:3000/Registration">Зарегистрироваться</a1>
 
       </div>
       </div>
