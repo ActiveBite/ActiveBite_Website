@@ -1,21 +1,24 @@
 import React from 'react'
-import "./Reg.css"
+import "./AuthRegForm.css"
+import { Link } from 'react-router-dom'
 
 function Reg() {
   return (
-    <div className="Form_Content">
-      <h2> Регистрация</h2>  
-      <form>
-        <input type="text" className="FadeIn_Second" name="login" placeholder="Логин"/>
-        <input type="email" className="FadeIn_Third" name="email" placeholder="Почта"/>
-        <input type="password" className="FadeIn_Third" name="password" placeholder="Пароль"/>
-        <input type="password" className="FadeIn_Third" name="rep_password" placeholder="Подтверждение пароля"/>
-        <input type="submit" class="FadeIn_Fourth" value="Зарегистрироваться"/>
-      </form>
-      <div className="Form_Footer">
-        <a1>Есть аккаунт?</a1><a href="http://localhost:3000/Auth">Авторизироваться</a>
-      </div>
-      </div>
+    <div className="form_page">
+        <div className="form_container">
+        <h2> Регистрация</h2>  
+        <form className='form'>
+            <input type="text" className="form_input" placeholder="Логин"/>
+            <input type="email" className="form_input" placeholder="Почта"/>
+            <input type="password" className="form_input" placeholder="Пароль"/>
+            <input type="password" className="form_input" placeholder="Подтверждение пароля"/>
+            <button type="submit" class="form_submit_button">Зарегистрироваться</button>
+        </form>
+        <div className="form_footer">
+            <p>Есть аккаунт?</p><Link to='/auth'>Авторизоваться</Link>
+        </div>
+        </div>
+    </div>
     )
 }
 export default Reg
