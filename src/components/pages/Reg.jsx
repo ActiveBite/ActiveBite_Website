@@ -1,8 +1,14 @@
 import React from 'react'
 import "./AuthRegForm.css"
 import { Link } from 'react-router-dom'
+import { useFor, Controller } from 'react-hook-form'
+
+
+
+
 
 function Reg() {
+
   return (
     <div className="form_page">
         <div className="form_container">
