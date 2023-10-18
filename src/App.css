@@ -55,3 +55,7 @@ table {
 	display: flex;
 }
 
+.content_wrap{
+	width: calc(100vw - 160px);
+}
+

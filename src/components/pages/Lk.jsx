@@ -4,26 +4,37 @@ import "./Lk.css"
 function Lk() {
   return (
     <div className='user'>
-        <span className="avatar" img=""></span>
-        <h2>username</h2>
-        <button className='user_recept'/>
-        <button className='user_tren'/>
-        <div className='user_panel'>
-            <span className="avatarka"></span>
-            <h1>username</h1>
-            <button className='recept' value="Рецепты"/>
-            <button className='tren' value="Тренировки"/>
-            <div>
-            <button className='Izbr' value="Избранные"/>
-            <button className='Public' value="Опублекованные"/>
-            <button className='Add' value="Добавить"/>
-            
-
-            </div>
-        </div>
+    <div className='lk_header'>
+      <div className='avatar_header'>
+        <img  className='avatar' src="" alt="" />
+        <h3 className='username'>username</h3>
+      </div>
+      <div className='lk_buttons_wrap'>
+        <button className='recipes_button'>Рецепты</button>
+        <button className='training_button'>Тренировки</button>
+      </div>
     </div>
+    <div className='service_block'>
+      <h2 className='choisen_block'>Тренировки</h2>
+      <div className='list_button'>
+      <div className='two_button'>
+        <button className='button'>Избранные</button>
+        <button className='button'>Опубликованные</button>
+      </div>
+        <button className='button'>Добавить</button>
+      </div>
+      <div className='list_choisen_block'>
+        <ul>
+        </ul>
+      </div>
+    </div>
+    
+    
+          
+
+   </div>
 
   )
 }
 
-export default lk
+export default Lk

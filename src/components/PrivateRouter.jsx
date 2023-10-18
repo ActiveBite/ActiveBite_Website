@@ -6,7 +6,9 @@ function PrivateRouter() {
   return (
     <div className='page_wrap'>
       <Sidebar/> 
-      <Outlet/>
+      <div className='content_wrap'>
+        <Outlet/>
+      </div>
     </div>
     
   )
