@@ -25,6 +25,27 @@ function Lk() {
       </div>
       <div className='list_choisen_block'>
         <ul>
+          <li className='component_of_the_list'>
+            <img className='avatar_list' src="" alt="" />
+            <div className='list_description'>
+              <h4 className='training_title'>Заголовок тренировки</h4>
+              <h6 className='short_description'>Краткое описание тренировки Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
+            </div>
+          </li>
+          <li className='component_of_the_list'>
+            <img className='avatar_list' src="" alt="" />
+            <div className='list_description'>
+              <h4 className='training_title'>Заголовок тренировки</h4>
+              <h6 className='short_description'>Краткое описание тренировки Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
+            </div>
+          </li>
+          <li className='component_of_the_list'>
+            <img className='avatar_list' src="" alt="" />
+            <div className='list_description'>
+              <h4 className='training_title'>Заголовок тренировки</h4>
+              <h6 className='short_description'>Краткое описание тренировки Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

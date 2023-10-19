@@ -82,3 +82,53 @@
     margin-bottom: 11px;
 }
 
+.component_of_the_list{
+    display: flex;
+    width: 530px;
+    height: 80px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin: 11px 15px auto 15px;
+    
+
+}
+
+.avatar_list{
+    display: flex;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: #D9D9D9;
+    width: 60px;
+    height: 60px;
+}
+
+.list_description {
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.short_description {
+    width: 414px;
+    height: 32px;
+    flex-shrink: 0;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.training_title {
+    width: 183px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
