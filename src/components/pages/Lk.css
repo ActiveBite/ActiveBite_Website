@@ -14,25 +14,17 @@
     gap: 23px;
 }
 
-.recipes_button {
-    background-color: transparent;
-    border-color: transparent;
+.button_header {
+    background-color: white;
+    border-style: none;
     font-size: 16px;
 }
 
-.training_button {
-    background-color: transparent;
-    border-color: transparent;
-    font-size: 16px;
-}
 
-.recipes_button:hover{
+.button_header:hover{
     color: red;
 }
 
-.training_button:hover{
-    color: red;
-}
 
 .avatar{
     border-radius: 100px;
@@ -114,10 +106,8 @@
 .short_description {
     width: 414px;
     height: 32px;
-    flex-shrink: 0;
-    color: rgba(0, 0, 0, 0.70);
+    color: black;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
@@ -125,10 +115,8 @@
 .training_title {
     width: 183px;
     height: 18px;
-    flex-shrink: 0;
-    color: #000;
+    color: black;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
 }

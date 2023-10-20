@@ -10,8 +10,8 @@ function Lk() {
         <h3 className='username'>username</h3>
       </div>
       <div className='lk_buttons_wrap'>
-        <button className='recipes_button'>Рецепты</button>
-        <button className='training_button'>Тренировки</button>
+        <button className='button_header'>Рецепты</button>
+        <button className='button_header'>Тренировки</button>
       </div>
     </div>
     <div className='service_block'>
