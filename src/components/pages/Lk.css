@@ -74,7 +74,7 @@
     margin-bottom: 11px;
 }
 
-.component_of_the_list{
+.components_of_the_list > li{
     display: flex;
     width: 530px;
     height: 80px;
@@ -109,14 +109,12 @@
     color: black;
     font-size: 13px;
     font-weight: 400;
-    line-height: normal;
 }
 
 .training_title {
     width: 183px;
     height: 18px;
-    color: black;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
 }
+
