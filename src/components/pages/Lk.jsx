@@ -1,17 +1,7 @@
 import React from 'react'
 import "./Lk.css"
+import ListItem from "./ListItem.jsx"
 
-function ListComponent() {
-  return (
-      <li>
-        <img className='image_item' src="" alt="" />
-        <div className='general_information'>
-          <h6 className='training_title'>Заголовок Тренировки</h6>
-          <p className='short_description'>Краткое описание тренировки Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
-    </li>
-  )   
-}
 
 function Lk() {
   return (
@@ -27,19 +17,19 @@ function Lk() {
         </div>
       </div>
       <div>
-        <h2 className='choisen_buttons_wrap'>Тренировки</h2>
-          <div className='list_button'>
-            <div className='two_button'>
-              <button className='button'>Избранные</button>
-              <button className='button'>Опубликованные</button>
-            </div>
-            <button className='button'>Добавить</button>
-          </div>    
-        <div className='selected_list'>
-          <ul className='components_of_the_list'>
-            <ListComponent />
-            <ListComponent /> 
-            <ListComponent />      
+        <h2 className='categories_title'>Тренировки</h2>
+        <div className='categories_button'>
+          <div className='categories'>
+            <button className='button'>Избранные</button>
+            <button className='button'>Опубликованные</button>
+          </div>
+          <button className='button'>Добавить</button>
+        </div>    
+        <div className='list_wrapper'>
+          <ul className='list'>
+            <ListItem />
+            <ListItem /> 
+            <ListItem />      
           </ul>
         </div>
       </div>
