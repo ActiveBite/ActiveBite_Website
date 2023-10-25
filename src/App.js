@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Auth from './components/pages/Auth'
 import Reg from './components/pages/Reg'
 import Lk from './components/pages/Lk'
+import Trains from './components/pages/Trains'
 
 function App() {
   return (
@@ -14,9 +15,8 @@ function App() {
         <Route path='/registration' element={<Reg/>}/>
         <Route path='/' element={<About/>}/>   
         <Route element={<PrivateRouter/>}> 
-          <Route>
             <Route path='/lk' element={<Lk/>}/>
-          </Route>
+            <Route path='/trains' element={<Trains/>}/>
         </Route>
       </Routes>
     </Router>
