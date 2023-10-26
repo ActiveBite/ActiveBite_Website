@@ -14,19 +14,8 @@
     gap: 23px;
 }
 
-.button_header:hover{
-    color: red;
-}
-
-
-.list_wrapper {
-    margin-top: 35px;
-    padding-left: 15px;
-    padding-top: 11px;
-    background-color: #D9D9D9;
-    width: 560px;
-    height: auto;
-    
+.trains > .list_wrapper {
+    margin-top: 15px;
 }
 
 .list > li{
@@ -50,7 +39,6 @@
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
-    margin-top: 2px;
     width: 150px;
     height: 27px;
     margin-right: 10px;
@@ -59,7 +47,7 @@
 .search_block{
     margin: 0 auto;
     padding-left: 15px;
-    padding-top: 11px;
+    padding-top: 17px;
     background-color: #D9D9D9;
     width: 560px;
     height: 60px;

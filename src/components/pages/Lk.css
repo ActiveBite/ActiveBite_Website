@@ -26,7 +26,7 @@
 }
 
 
-.avatar{
+.lk_avatar{
     border-radius: 100px;
     background-color: #8D8D8D;
     width: 110px;
@@ -39,7 +39,7 @@
     justify-content: space-between;
 }
 
-.username{
+.lk_username{
     margin-left: 20px;
 }
 
@@ -65,15 +65,7 @@
     gap: 34px;
 }
 
-.list_wrapper {
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-top: 11px;
-    background-color: #D9D9D9;
-    width: 560px;
-    height: auto;
-    padding-bottom: 56px;
-}
+
 
 .list > li{
     display: flex;
