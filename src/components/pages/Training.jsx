@@ -1,6 +1,8 @@
 import React from 'react'
+import "Training.css"
+import Exercise from "./Exercise"
 
-function training() {
+function Training() {
   return (
     <div>
         <div className='training_header'>
@@ -17,12 +19,13 @@ function training() {
         </div>
         <div>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <Exercise />
+                <Exercise />
+                <Exercise />
+                <Exercise />
             </ul>
         </div>
+        <button>Запустить тренировку</button>
     </div>
   )
 }
