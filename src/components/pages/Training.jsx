@@ -7,16 +7,18 @@ function Training() {
     <div>
         <div className='training_header'>
             <img className='training_image'src="" alt="" />
-            <div className='workout'>
-                <h2>Заголовок тренировки</h2>
+            <div>
+                <h2 className='workout_title'>Заголовок тренировки</h2>
                 <div className='workout_button'>
-                    <button className='button'>В избранное</button>
-                    <button className='button'>Лайк</button>
-                    <button className='button'>Дизлайк</button>
+                    <button className='action_button'>В избранное</button>
+                    <button className='action_button'>Лайк</button>
+                    <button className='action_button'>Дизлайк</button>
                 </div>
             </div>
         </div>
-        <p className='training_description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales ultricies tortor, vel euismod ligula condimentum nec. Curabitur nec orci ante. Donec lectus mauris, sodales a ligula vestibulum, tristique tempus nisl. Aliquam vitae purus quis justo cursus aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales ultricies tortor, vel euismod ligula condimentum nec. Curabitur nec orci ante. Donec lectus mauris, sodales a ligula vestibulum, tristique tempus nisl. Aliquam vitae purus quis justo cursus aliquam. </p>
+        <div className='description_wrapper'>
+            <p className='training_description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales ultricies tortor, vel euismod ligula condimentum nec. Curabitur nec orci ante. Donec lectus mauris, sodales a ligula vestibulum, tristique tempus nisl. Aliquam vitae purus quis justo cursus aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales ultricies tortor, vel euismod ligula condimentum nec. Curabitur nec orci ante. Donec lectus mauris, sodales a ligula vestibulum, tristique tempus nisl. Aliquam vitae purus quis justo cursus aliquam. </p>
+        </div>
         <div className='list_wrapper'>
             <ul className='list_exercises'>
                 <Exercise />

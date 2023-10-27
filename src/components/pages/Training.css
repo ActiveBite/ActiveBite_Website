@@ -1,10 +1,11 @@
 .training_header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: 0 auto;
+    padding-top: 14px;
     width: 537px;
     height: 140px;
+    gap: 35px;
     
 }
 
@@ -15,31 +16,44 @@
     height: 140px;
 }
 
-.workout{
-    display: flex;
-    flex-direction: column;
+.workout_title{
+    padding-top: 52px;
+    align-items: center;
+    font-weight: 400;
 }
+
 
 .workout_button{
     display: flex;
-    flex-direction: row;
+    padding-top: 27px;
     gap: 14px;
-    margin-top: 27px;
 }
 
-.button{
+.action_button{
+    border: none;
+    background-color: #D9D9D9;
     height: 25px;
     width: 90px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
-.training_description{
+.description_wrapper{
     width: 537px;
     height: 120px;
     display: flex;
     margin: 0 auto;
+    padding-top: 21px;
     padding-bottom: 25px;
+
 }
+
+.training_description{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
 .list_wrapper{
     margin-top: 25px;
     
@@ -48,15 +62,18 @@
 .list_exercises{
     display: flex;
     flex-direction: column;
-    gap: 13px;    
+    gap: 13px;
+    padding-bottom: 40px;    
 }
 
 .start_button{
     display: flex;
+    margin: 0 auto;
+    text-align: center;
     width: 180px;
     height: 30px;
-    margin: 0 auto;
     background-color: #D9D9D9;
     font-size: 15px;
     border: none;
+    padding-top: 6px;
 }
