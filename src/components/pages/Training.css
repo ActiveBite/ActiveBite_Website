@@ -37,19 +37,15 @@
     font-size: 12px;
 }
 
-.description_wrapper{
-    width: 537px;
-    height: 120px;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 21px;
-    padding-bottom: 25px;
-
-}
 
 .training_description{
     font-size: 14px;
     font-weight: 500;
+    width: 537px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 21px;
+    padding-bottom: 25px;
 }
 
 
