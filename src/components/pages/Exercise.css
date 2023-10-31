@@ -1,9 +1,6 @@
 .list_item{
     font-size: 14px;
     font-weight: 500;
-}
-
-.item_wrapper{
     width: 400px;
     height: 40px;
     background-color: #D9D9D9;
