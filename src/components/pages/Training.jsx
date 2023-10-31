@@ -19,7 +19,7 @@ function Training() {
         <div className='description_wrapper'>
             <p className='training_description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales ultricies tortor, vel euismod ligula condimentum nec. Curabitur nec orci ante. Donec lectus mauris, sodales a ligula vestibulum, tristique tempus nisl. Aliquam vitae purus quis justo cursus aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales ultricies tortor, vel euismod ligula condimentum nec. Curabitur nec orci ante. Donec lectus mauris, sodales a ligula vestibulum, tristique tempus nisl. Aliquam vitae purus quis justo cursus aliquam. </p>
         </div>
-        <div className='list_shell'>
+        <div className='list_exercises_wrapper'>
             <ul className='list_exercises'>
                 <Exercise />
                 <Exercise />
