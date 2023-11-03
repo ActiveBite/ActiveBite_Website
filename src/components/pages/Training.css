@@ -16,14 +16,14 @@
     height: 140px;
 }
 
-.workout_title{
+.training_title{
     padding-top: 52px;
-    align-items: center;
     font-weight: 400;
+    font-size: 32px;
 }
 
 
-.workout_button{
+.training_button{
     display: flex;
     padding-top: 27px;
     gap: 14px;
@@ -34,7 +34,8 @@
     background-color: #D9D9D9;
     height: 25px;
     width: 90px;
-    font-size: 12px;
+    font-size: 13px;
+    padding: 0;
 }
 
 
@@ -50,10 +51,6 @@
 
 
 
-.list_exercises_wrapper{
-    margin-top: 25px;
-    
-}
 
 .list_exercises{
     display: flex;
