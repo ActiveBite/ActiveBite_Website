@@ -1,0 +1,72 @@
+.training_header{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 14px;
+    width: 537px;
+    gap: 35px;
+    
+}
+
+.training_image{
+    border-radius: 100px;
+    background-color: #D9D9D9;
+    width: 140px;
+    height: 140px;
+}
+
+.training_title{
+    padding-top: 52px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+
+.training_button{
+    display: flex;
+    padding-top: 27px;
+    gap: 14px;
+}
+
+.action_button{
+    border: none;
+    background-color: #D9D9D9;
+    height: 25px;
+    width: 90px;
+    font-size: 13px;
+    padding: 0;
+}
+
+
+.training_description{
+    font-size: 14px;
+    font-weight: 500;
+    width: 537px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 21px;
+    padding-bottom: 25px;
+    line-height: normal;
+}
+
+
+
+
+.list_exercises{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-bottom: 40px;    
+}
+
+.start_button{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 30px;
+    background-color: #D9D9D9;
+    font-size: 15px;
+    border: none;
+}
