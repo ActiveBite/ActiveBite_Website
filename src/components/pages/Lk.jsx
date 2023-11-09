@@ -8,8 +8,8 @@ function Lk() {
     <div className='user'>
       <div className='lk_header'>
         <div className='avatar_header'>
-          <img  className='avatar' src="" alt="" />
-          <h3 className='username'>username</h3>
+          <img  className='lk_avatar' src="" alt="" />
+          <h3 className='lk_username'>username</h3>
         </div>
         <div className='lk_buttons_wrap'>
           <button className='button_header'>Рецепты</button>
