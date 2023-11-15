@@ -23,7 +23,7 @@ function Lk() {
             <button className='button'>Избранные</button>
             <button className='button'>Опубликованные</button>
           </div>
-          <button className='button'>Добавить</button>
+          <button className='button_addendum'>Добавить</button>
         </div>    
         <div className='list_wrapper'>
           <ul className='list'>

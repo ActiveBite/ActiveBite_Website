@@ -1,0 +1,50 @@
+.window_wrapper {
+    width: 450px;
+    height: 580px;
+    background-color: grey;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.window {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.window_title{
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.filling_fields{
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.description_field::-moz-placeholder{
+    color: aqua;
+}
+
+.title_field{
+    width: 200px;
+    height: 31px;
+    
+}
+
+.description_field{
+    width: 320px;
+    height: 113px;
+    
+}
+
+.title_field::placeholder{
+    
+    
+}
