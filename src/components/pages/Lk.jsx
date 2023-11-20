@@ -4,7 +4,7 @@ import ListItem from "./ListItem.jsx"
 import Mw from './Mw.jsx'
 
 function Lk() {
-  const [modalActive, setModalActive] = useState(true)
+  const [modalActive, setModalActive] = useState(false)
   return (
     <div className='user'>
       <div className='lk_header'>

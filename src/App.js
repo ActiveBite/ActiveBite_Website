@@ -4,7 +4,6 @@ import About from './components/pages/About';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Lk from './components/pages/Lk';
 import Training from './components/pages/Training';
-import Mw from './components/pages/Mw';
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
           <Route>
             <Route path='/lk' element={<Lk/>}/>
             <Route path='/training' element={<Training/>}/>
-            <Route path='/mw' element={<Mw/>}/>
           </Route>
         </Route>
       </Routes>

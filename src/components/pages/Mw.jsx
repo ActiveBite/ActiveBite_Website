@@ -7,20 +7,22 @@ function Mw({active, setActive}) {
             <div className='window_body' onClick={e => e.stopPropagation()}>
                 <div className='window_content'>
                     <h2 className='window_title'>Публикация тренировки</h2>
-                    <div className='filling_fields'>
+                    <div className='filling_exercise_fields'>
                         <input type="text" className='title_field' placeholder='Заголовок тренировки'/>
-                        <p><textarea className='description_field' placeholder='Описание тренировки'></textarea></p>
+                        <textarea className='description_field' placeholder='Описание тренировки'></textarea>
                     </div>
                     <div className='add_picture_wrapper'>
-                        <input type="file" className="picture"/>
-                        <button className='add_picture'>Добавить картинку</button>
+                    <input type="file" className="picture"/>
+                        <label className='add_picture'>Добавить картинку
+                            <input type="file" className="button_function"/>
+                        </label>
                     </div>
-                    <div className='adding_exercise_wrapper'>
-                        <div className='adding_exercise'>
+                    <div className='exercise_info_fields_wrapper'>
+                        <div className='exercise_info_fields'>
                             <input type="text" placeholder='Упражнение' className='exercise_info'/>
-                            <input type="text" placeholder='Длительность' className='exercise_info'/>
+                            <input type="number" placeholder='Длительность' className='exercise_info' min="1"/>
                         </div>
-                        <button className='adding'>Добавить</button>
+                        <button className='button_adding_exercise'>Добавить</button>
                     </div>
                     <div className='list_exercise_wrapper'>
                         <ul className='list_exercise'>
@@ -38,7 +40,7 @@ function Mw({active, setActive}) {
                             </li>  
                         </ul>
                     </div>
-                    <button className='public' id='close_btn'>Опубликовать</button>
+                    <button className='publish'>Опубликовать</button>
                 </div>
             </div>
         </div>
