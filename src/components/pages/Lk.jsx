@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Lk.css"
 import ListItem from "./ListItem.jsx"
-
+import Mw from './Mw.jsx'
 
 function Lk() {
+  const [modalActive, setModalActive] = useState(false)
   return (
     <div className='user'>
       <div className='lk_header'>
@@ -23,7 +24,7 @@ function Lk() {
             <button className='button'>Избранные</button>
             <button className='button'>Опубликованные</button>
           </div>
-          <button className='button'>Добавить</button>
+          <button className='button_addendum' onClick={() => setModalActive(true)}>Добавить</button> 
         </div>    
         <div className='list_wrapper'>
           <ul className='list'>
@@ -33,8 +34,10 @@ function Lk() {
           </ul>
         </div>
       </div>
+      <Mw active={modalActive} setActive={setModalActive}/>
    </div>
   )
 }
+
 
 export default Lk

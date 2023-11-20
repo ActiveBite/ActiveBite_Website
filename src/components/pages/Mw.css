@@ -1,0 +1,129 @@
+.window{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    padding-top: 10%;
+    transform: scale(0);
+}
+
+.window.active{
+    transform: scale(1);
+}
+
+.window_body {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 580px;
+    background-color: white;
+}
+
+
+.window_title{
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.filling_training_fields{
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+
+.title_training_field{
+    width: 200px;
+    height: 31px;
+    align-items: center; 
+}
+
+.description_training_field{
+    width: 320px;
+    height: 113px;
+}
+
+.add_picture{
+    display: flex;
+    direction: rtl;
+    width: 320px;
+    height: 24px;
+    margin-top: 17px;
+    align-items: center;
+    
+}
+
+::file-selector-button {
+    margin-left: 106px;
+    border: none;
+    background-color: #D9D9D9;
+    width: 124px;
+    height: 24px;
+    font-size: 13px;
+  }
+
+.exercise_info_fields_wrapper{
+    display: flex;
+    padding-top: 13px;
+    gap: 30px;
+    align-items: center;
+}
+
+.exercise_info_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.button_adding_exercise{
+    width: 130px;
+    height: 22px;
+    border: none;
+    background-color: #80C9D9;
+}
+
+.exercise_info{
+    width: 160px;
+    height: 31px;
+}
+
+.list_exercise_wrapper{
+    overflow: auto;
+    width: 320px;
+    height: 170px;
+    background-color: #D9D9D9;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.list_exercise{
+    display: flex;
+    padding: 15px 15px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exercise{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 8px 6px;
+    font-size: 13px;
+}
+
+.publish{
+    width: 120px;
+    height: 31px;
+    border: none;
+    background-color: #D9D9D9;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 14px;
+}
