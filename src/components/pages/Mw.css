@@ -14,30 +14,24 @@
 }
 
 .window_body {
-    
-    width: 450px;
-    height: 580px;
-    background-color: white;
-    display: flex;
-    margin: 0 auto;
-    
-}
-
-.window_content {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    width: 320px;
+    width: 450px;
+    height: 580px;
+    background-color: white;
+
     
 }
+
 
 .window_title{
     font-weight: 400;
     padding-top: 10px;
 }
 
-.filling_exercise_fields{
+.filling_training_fields{
     margin-top: 13px;
     display: flex;
     flex-direction: column;
@@ -46,51 +40,34 @@
 }
 
 
-.title_field{
+.title_training_field{
     width: 200px;
     height: 31px;
     align-items: center; 
 }
 
-.description_field{
+.description_training_field{
     width: 320px;
     height: 113px;
-    
-}
-
-.add_picture_wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 23px;
-    gap: 106px;
-    
 }
 
 .add_picture{
-    padding: 4px 5px;
-    text-align: center;
-    font-size: 12px;
-    width: 124px;
-    height: 24px;
-    background-color: #D9D9D9;
-    border: none;
     display: flex;
-    gap: 20px;
-}
-
-.picture{
-    width: 90px;
-    height: 15px;
-}
-
-.button_function{
-    display: none;
+    direction: rtl;
+    width: 320px;
+    height: 24px;
+    margin-top: 17px;
+    align-items: center;
     
 }
 
 ::file-selector-button {
-    display: none;
+    margin-left: 106px;
+    border: none;
+    background-color: #D9D9D9;
+    width: 124px;
+    height: 24px;
+    font-size: 13px;
   }
 
 .exercise_info_fields_wrapper{
@@ -150,4 +127,11 @@
     margin: 0 auto;
     align-items: center;
     padding-left: 14px;
+}
+
+.scroll{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 43px;
+    font-size: 13px;
 }
