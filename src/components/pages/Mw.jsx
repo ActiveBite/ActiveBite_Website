@@ -28,7 +28,6 @@ function Mw({active, setActive}) {
                             <p>Анжуманя</p>
                             <p>5 мин.</p>
                         </li>
-                        <p className='scroll'>если не влезает, то скролл</p>
                     </ul>
                 </div>
                 <button className='publish'>Опубликовать</button>
