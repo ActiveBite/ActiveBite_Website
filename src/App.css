@@ -59,6 +59,7 @@ button{
 	display: block;
 	padding-block: 0;
     padding-inline: 0;
+	cursor: pointer;
 }
 
 .page_wrap{
