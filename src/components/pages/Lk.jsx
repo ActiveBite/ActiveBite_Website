@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Lk.css"
 import ListItem from "../ListItem.jsx"
+import Mw from './Mw.jsx'
 import { activebite } from '../../api/api.js';
 
 
@@ -25,7 +26,6 @@ function Lk() {
     fetchData(category)
   }, [category])
 
-
   return (
     <div className='user'>
       <div className='lk_header'>
@@ -45,7 +45,7 @@ function Lk() {
             <button className={`button ${category === 'favorite' ? 'active' : ''}`} onClick={() => setCategory('favorite')}>Избранные</button>
             <button className={`button ${category === 'published' ? 'active' : ''}`} onClick={() => setCategory('published')}>Опубликованные</button>
           </div>
-          <button className='button'>Добавить</button>
+          <button className='button_addendum' onClick={() => setModalActive(true)}>Добавить</button> 
         </div>    
         <div className='list_wrapper'>
           {loading ? (
@@ -61,8 +61,10 @@ function Lk() {
         )}   
         </div>
       </div>
+      <Mw active={modalActive} setActive={setModalActive}/>
    </div>
   )
 }
+
 
 export default Lk

@@ -9,6 +9,7 @@ import Trainings from './components/pages/Trainings'
 import Training from './components/pages/Training'
 
 
+
 function App() {
   return (
     <Router>
