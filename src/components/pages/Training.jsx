@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Training.css"
-import Exercise from "./Exercise.jsx"
+import Exercise from "../Exercise.jsx"
 
 function Training() {
   return (
