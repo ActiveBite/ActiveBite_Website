@@ -1,9 +1,9 @@
 import React from 'react'
-import "./Trains.css"
+import "./Trainings.css"
 import ListItem from "../ListItem.jsx"
 
 
-function Trains() {
+function Trainings() {
   return (
     <div className='trains'> 
       <h2 className='categories_title'>Тренировки</h2>
@@ -23,4 +23,4 @@ function Trains() {
   )
 }
 
-export default Trains
+export default Trainings
