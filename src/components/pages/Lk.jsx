@@ -5,23 +5,30 @@ import axios from 'axios';
 
 
 function Lk() {
-
   const [category, setCategory] = useState('favorite');
   const [trainings, setTrainings] = useState([]);
   const [loading, setLoading] = useState(true);
 
-useEffect(() => {
-  const fetchData = async () => {
+  const fetchData = async (selectedCategory) => {
+    setLoading(true);
     try {
-      const response = await axios.get(`/trainings/?${category === 'published' ? 'published=true' : 'favorite=true'}`);
+      const response = await axios.get(`/trainings/?${selectedCategory === 'published' ? 'published=true' : 'favorite=true'}`, { withCredentials: true });
       setTrainings(response.data);
-      setLoading(false);
     } catch (error) {
-      console.error('Error while try get trainings data:', error);
+      console.error('Ошибка при получении данных:', error);
+    } finally {
+      setLoading(false);
     }
   };
-    fetchData();
+
+  useEffect(() => {
+    fetchData(category);
   }, [category]);
+
+  const handleCategoryChange = newCategory => {
+    setCategory(newCategory);
+  };
+
 
   return (
     <div className='user'>
@@ -39,8 +46,8 @@ useEffect(() => {
         <h2 className='categories_title'>Тренировки</h2>
         <div className='categories_button'>
           <div className='categories'>
-            <button className={`button ${category === 'favorite' ? 'active' : ''}`} onClick={() => setCategory('favorite')}>Избранные</button>
-            <button className={`button ${category === 'published' ? 'active' : ''}`} onClick={() => setCategory('published')}>Опубликованные</button>
+            <button className={`button ${category === 'favorite' ? 'active' : ''}`} onClick={() => handleCategoryChange('favorite')}>Избранные</button>
+            <button className={`button ${category === 'published' ? 'active' : ''}`} onClick={() => handleCategoryChange('published')}>Опубликованные</button>
           </div>
           <button className='button'>Добавить</button>
         </div>    

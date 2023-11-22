@@ -1,15 +1,16 @@
 import React from 'react'
 import "./ListItem.css"
 
-function ListItem() {
+function ListItem({ training }) {
   return (
-      <li>
-        <img className='item_image' src="" alt="" />
-        <div className='general_information'>
-          <h6 className='item_title'>Заголовок Тренировки</h6>
-          <p className='short_description'>Краткое описание тренировки Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
+    <li>
+      <img className='item_image' src={training.img} alt={training.title} />
+      <div className='general_information'>
+        <h6 className='item_title'>{training.title}</h6>
+        <p className='short_description'>{training.description}</p>
+      </div>
     </li>
-  )   
+  );
 }
+
 export default ListItem
