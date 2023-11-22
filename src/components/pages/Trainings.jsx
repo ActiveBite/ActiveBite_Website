@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Trains.css"
-import ListItem from "./ListItem.jsx"
+import ListItem from "../ListItem.jsx"
 
 
 function Trains() {

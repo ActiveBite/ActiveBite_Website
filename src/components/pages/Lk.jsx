@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Lk.css"
-import ListItem from "./ListItem.jsx"
-import axios from 'axios';
+import ListItem from "../ListItem.jsx"
+import { activebite } from '../../api/api.js';
 
 
 function Lk() {
@@ -10,24 +10,20 @@ function Lk() {
   const [loading, setLoading] = useState(true);
 
   const fetchData = async (selectedCategory) => {
-    setLoading(true);
+    setLoading(true)
     try {
-      const response = await axios.get(`/trainings/?${selectedCategory === 'published' ? 'published=true' : 'favorite=true'}`, { withCredentials: true });
-      setTrainings(response.data);
+      const response = await activebite.get(`/trainings/?${selectedCategory === 'published' ? 'published=true' : 'favorite=true'}`, { withCredentials: true })
+      setTrainings(response.data)
     } catch (error) {
-      console.error('Ошибка при получении данных:', error);
+      console.error('Ошибка при получении данных:', error)
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
   };
 
   useEffect(() => {
-    fetchData(category);
-  }, [category]);
-
-  const handleCategoryChange = newCategory => {
-    setCategory(newCategory);
-  };
+    fetchData(category)
+  }, [category])
 
 
   return (
@@ -46,8 +42,8 @@ function Lk() {
         <h2 className='categories_title'>Тренировки</h2>
         <div className='categories_button'>
           <div className='categories'>
-            <button className={`button ${category === 'favorite' ? 'active' : ''}`} onClick={() => handleCategoryChange('favorite')}>Избранные</button>
-            <button className={`button ${category === 'published' ? 'active' : ''}`} onClick={() => handleCategoryChange('published')}>Опубликованные</button>
+            <button className={`button ${category === 'favorite' ? 'active' : ''}`} onClick={() => setCategory('favorite')}>Избранные</button>
+            <button className={`button ${category === 'published' ? 'active' : ''}`} onClick={() => setCategory('published')}>Опубликованные</button>
           </div>
           <button className='button'>Добавить</button>
         </div>    
