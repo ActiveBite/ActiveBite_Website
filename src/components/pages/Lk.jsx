@@ -46,7 +46,7 @@ function Lk() {
             <button className={`button ${category === 'favorite' ? 'active' : ''}`} onClick={() => setCategory('favorite')}>Избранные</button>
             <button className={`button ${category === 'published' ? 'active' : ''}`} onClick={() => setCategory('published')}>Опубликованные</button>
           </div>
-          <button className='button_addendum' onClick={() => setModalActive(true)}>Добавить</button> 
+          <button className='button' onClick={() => setModalActive(true)}>Добавить</button> 
         </div>    
         <div className='list_wrapper'>
           {loading ? (
