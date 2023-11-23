@@ -5,12 +5,13 @@ import Mw from '../modal/Mw.jsx'
 import { activebite } from '../../api/api.js';
 
 
+
 function Lk() {
   const [category, setCategory] = useState('favorite')
   const [trainings, setTrainings] = useState([])
   const [loading, setLoading] = useState(true)
   const [modalActive, setModalActive] = useState(false)
-
+ 
   const fetchData = async (selectedCategory) => {
     setLoading(true)
     try {

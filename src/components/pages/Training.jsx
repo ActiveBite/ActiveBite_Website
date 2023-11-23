@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Training.css"
 import Exercise from "../Exercise.jsx"
+import { useNavigate, useParams } from 'react-router-dom'
+import { activebite } from '../../api/api.js'
 
 function Training() {
+    const [training, setTraining] = useState({})
+    const params = useParams() 
+    const router = useNavigate()
+    function getTraining(trainingId) {
+        activebite.get('/trainings/training/') , {params:{trainingId}}
+        .then(result => {
+            if (!result.data){
+                router('/404')
+            }
+            setTraining(result.data)
+    })
+    }
+    useEffect(() => {getTraining (params),[]});
   return (
     <div>
+        {training &&
+        <>
         <div className='training_header'>
             <img className='training_image'src="" alt="" />
             <div>
@@ -24,6 +41,8 @@ function Training() {
                 <Exercise />
             </ul>
         <button className='start_button'>Запустить тренировку</button>
+        </>
+}
     </div>
   )
 }
