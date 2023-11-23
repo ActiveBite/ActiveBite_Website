@@ -76,10 +76,46 @@
 }
 
 .exercise_info_fields{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 6px;
+    
 }
+
+.hint_wrapper{
+    position: absolute;
+    background-color: #D9D9D9;
+    height: 118px;
+    display: none;
+    padding: 6px 6px;
+    top: 31px;
+    
+
+}
+
+.hint{
+    padding: 3px 3px;
+    height: 22px;
+    cursor: pointer;
+    transition: .2s ease;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    position: relative; 
+    margin-top: 3px;
+}
+
+.hint:hover{
+    transition: .2s ease;
+}
+
+.exercise_info_fields input:valid + .hint_wrapper{
+    display: block;
+  }
 
 .button_adding_exercise{
     width: 130px;
@@ -87,6 +123,7 @@
     border: none;
     background-color: #80C9D9;
 }
+
 
 .exercise_info{
     width: 160px;

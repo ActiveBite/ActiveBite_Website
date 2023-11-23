@@ -30,7 +30,7 @@ function Lk() {
           <ul className='list'>
             <ListItem />
             <ListItem /> 
-            <ListItem />      
+            <ListItem />       
           </ul>
         </div>
       </div>

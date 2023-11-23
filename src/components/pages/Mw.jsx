@@ -13,7 +13,19 @@ function Mw({active, setActive}) {
                 <input type="file" className='add_picture'/>
                 <div className='exercise_info_fields_wrapper'>
                     <div className='exercise_info_fields'>
-                        <input type="text" placeholder='Упражнение' className='exercise_info'/>
+                        <input type="text" placeholder='Упражнение' className='exercise_info' required/>
+                        <div className='hint_wrapper'>
+                            <div className='hint'>
+                                <p>Подтягивание на перекладине</p>
+                                <p>Средне</p>
+                            </div>
+                            <div className='hint'>
+                                <p>Бег</p>
+                                <p>Легко</p>
+                            </div>
+                            <div className='hint'></div>
+                            <div className='hint'></div>
+                        </div>
                         <input type="number" placeholder='Длительность' className='exercise_info' min="1"/>
                     </div>
                     <button className='button_adding_exercise'>Добавить</button>
