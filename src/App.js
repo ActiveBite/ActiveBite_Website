@@ -7,7 +7,7 @@ import Reg from './components/pages/Reg'
 import Lk from './components/pages/Lk'
 import Trains from './components/pages/Trains'
 import Training from './components/pages/Training'
-
+import NotFoundPage from './components/pages/NotFoundPage'
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
       <Routes>
         <Route path='/auth' element={<Auth/>}/>
         <Route path='/registration' element={<Reg/>}/>
-        <Route path='/' element={<About/>}/>   
+        <Route path='/' element={<About/>}/> 
+        <Route path='*' element={<NotFoundPage/>}/>  
         <Route element={<PrivateRouter/>}> 
             <Route path='/lk' element={<Lk/>}/>
             <Route path='/training' element={<Training/>}/>

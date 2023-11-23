@@ -1,0 +1,16 @@
+.error{
+color: red;
+font-size: 228px;
+}
+
+.error_description{
+font-size: 52px;
+}
+
+.error_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
