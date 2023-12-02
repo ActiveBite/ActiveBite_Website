@@ -1,7 +1,10 @@
 import React from 'react'
 import "./Mw.css"
 
+
 function Mw({active, setActive}) {
+
+
     return (
         <div className={active ? "window active" : "window"} onClick={() => setActive(false)}>
             <div className='window_body' onClick={e => e.stopPropagation()}>
@@ -10,26 +13,20 @@ function Mw({active, setActive}) {
                     <input type="text" className='title_training_field' placeholder='Заголовок тренировки'/>
                     <textarea className='description_training_field' placeholder='Описание тренировки'></textarea>
                 </div>
-                <input type="file" className='add_picture'/>
                 <div className='exercise_info_fields_wrapper'>
                     <div className='exercise_info_fields'>
                         <input type="text" placeholder='Упражнение' className='exercise_info' required/>
                         <div className='hint_wrapper'>
-                            <div className='hint'>
-                                <p>Подтягивание на перекладине</p>
-                                <p>Средне</p>
-                            </div>
-                            <div className='hint'>
-                                <p>Бег</p>
-                                <p>Легко</p>
-                            </div>
-                            <div className='hint'></div>
-                            <div className='hint'></div>
+                            <button className='hint'>Подтягивания</button>
+                            <button className='hint'></button>
+                            <button className='hint'></button>
+                            <button className='hint'></button>
                         </div>
                         <input type="number" placeholder='Длительность' className='exercise_info' min="1"/>
                     </div>
                     <button className='button_adding_exercise'>Добавить</button>
                 </div>
+                <input type="file" className='add_picture'/>
                 <div className='list_exercise_wrapper'>
                     <ul className='list_exercise'>
                         <li className='exercise'>
