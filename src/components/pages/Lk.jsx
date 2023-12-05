@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./Lk.css"
 import ListItem from "../ListItem.jsx"
-import Mw from '../modal/Mw.jsx'
 import { activebite } from '../../api/api.js';
+import AddTrainingModal from '../modal/AddTrainingModal.jsx';
 
 
 function Lk() {
@@ -62,7 +62,7 @@ function Lk() {
         )}   
         </div>
       </div>
-      <Mw active={modalActive} setActive={setModalActive}/>
+      <AddTrainingModal active={modalActive} setActive={setModalActive}/>
    </div>
   )
 }
