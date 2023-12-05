@@ -8,7 +8,7 @@ function SearchExerciseInput({setExerciseId}) {
   const debounceSearch = useDebounce(searchValue, 700)
 
   const getExercises = () => {
-    activebite.get('/exercises', {
+    activebite.get('/exercises/', {
       params: {
         search_query: searchValue
       },
@@ -39,8 +39,11 @@ function SearchExerciseInput({setExerciseId}) {
           <ul className='hints'>
             { 
             hints.map((hint) => (
-              <li className='hint' onClick={() => setExerciseId(hint.id)}>
-                <p>{hint.name}</p>
+              <li className='hint' onClick={() => {
+                setExerciseId(hint.id) 
+                setSearchValue(hint.exercise_name)
+              }}>
+                <p>{hint.exercise_name}</p>
                 <p>{hint.difficulty}</p>
               </li>
             ))}
