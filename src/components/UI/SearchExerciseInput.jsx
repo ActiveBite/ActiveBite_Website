@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import useDebounce from '../../hooks/useDebounce'
 import { activebite } from '../../api/api'
+import './SearchExerciseInput.css'
 
-function SearchExerciseInput({setExerciseId}) {
+function SearchExerciseInput({setExerciseId, exerciseId, setExerciseName}) {
   const [searchValue, setSearchValue] = useState('')
   const [hints, setHints] = useState([])
   const debounceSearch = useDebounce(searchValue, 700)
@@ -19,36 +20,41 @@ function SearchExerciseInput({setExerciseId}) {
   }
 
   useEffect(() => {
-    setExerciseId(null)
     if (!debounceSearch) {
       setHints([])
       return
     }
 
+    if (hints.length === 1 && exerciseId === hints[0].id) {
+      setExerciseId(hints[0].id)
+      return
+    }
+    setExerciseId(null)
+
     getExercises()
 
   }, [debounceSearch])
 
+  useEffect(() => {console.log(exerciseId);}, [exerciseId])
 
 
   return (
     <div className='search_exercise_input'>
       <input type="text" placeholder='Упражнение' className='exercise_info' onChange={(e) => setSearchValue(e.target.value)} value={searchValue}/>
-      {hints &&
-        <div className='hint_wrapper'>
+      {(hints.length > 0 && exerciseId === null) &&
           <ul className='hints'>
             { 
             hints.map((hint) => (
               <li className='hint' onClick={() => {
-                setExerciseId(hint.id) 
                 setSearchValue(hint.exercise_name)
+                setExerciseId(hint.id) 
+                setExerciseName(hint.exercise_name)
               }}>
                 <p>{hint.exercise_name}</p>
                 <p>{hint.difficulty}</p>
               </li>
             ))}
           </ul>
-        </div>
       }
     </div>
   )

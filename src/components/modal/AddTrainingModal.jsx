@@ -5,11 +5,12 @@ import SearchExerciseInput from '../UI/SearchExerciseInput'
 function AddTrainingModal({active, setActive}) {
   const [modalExercises, setModalExercises] = useState([])
   const [exerciseId, setExerciseId] = useState(null)
-  const [duration, setDuration] = useState(null)
+  const [duration, setDuration] = useState('')
+  const [exerciseName, setExerciseName] = useState('')
 
   const addExercise = () => {
-    if (!exerciseId || duration) return
-    setModalExercises(exercises => [...exercises, {exercise_id: exerciseId, duration: duration}])
+    if (!exerciseId || !duration) return
+    setModalExercises(exercises => [...exercises, {exercise_id: exerciseId, name: exerciseName, duration: duration}])
   }
 
   return (
@@ -22,7 +23,7 @@ function AddTrainingModal({active, setActive}) {
       <input type="file" className='add_picture'/>
       <div className='exercise_info_fields_wrapper'>
           <div className='exercise_info_fields'>
-              <SearchExerciseInput setExerciseId={setExerciseId}/>
+              <SearchExerciseInput setExerciseId={setExerciseId} exerciseId={exerciseId} setExerciseName={setExerciseName}/>
               <input type="number" placeholder='Длительность' className='exercise_info' min="1" onChange={(e) => setDuration(e.target.value)} value={duration}/>
           </div>
           <button className='button_adding_exercise' onClick={() => addExercise()}>Добавить</button>

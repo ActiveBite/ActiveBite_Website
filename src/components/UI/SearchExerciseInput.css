@@ -1,0 +1,29 @@
+.hints {
+    position: absolute;
+    width: 160px;
+    background-color: #DEDEDE;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid black;
+}
+
+.hint {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.hint > p {
+    font-size: 11px;
+}
+
+.hint > p:nth-child(1) {
+    max-width: 100px;
+}
+
+
