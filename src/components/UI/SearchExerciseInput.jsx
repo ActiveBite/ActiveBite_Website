@@ -45,7 +45,7 @@ function SearchExerciseInput({setExerciseId, exerciseId, setExerciseName}) {
           <ul className='hints'>
             { 
             hints.map((hint) => (
-              <li className='hint' onClick={() => {
+              <li className='hint' key={hint.id} onClick={() => {
                 setSearchValue(hint.exercise_name)
                 setExerciseId(hint.id) 
                 setExerciseName(hint.exercise_name)
