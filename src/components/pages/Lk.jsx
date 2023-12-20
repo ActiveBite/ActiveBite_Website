@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Lk.css"
-import ListItem from "../ListItem.jsx"
+import ListItem from "../TrainingItem.jsx"
 import { activebite } from '../../api/api.js';
 import AddTrainingModal from '../modal/AddTrainingModal.jsx';
 

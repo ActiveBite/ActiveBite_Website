@@ -1,3 +1,7 @@
+.item {
+    cursor: pointer;
+}
+
 .general_information{
     display: flex;  
     flex-direction: column;
