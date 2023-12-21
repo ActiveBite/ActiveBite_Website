@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Exercise.css"
 
-function Exercise() {
+function Exercise({title, duration}) {
     return (
         <li className='list_exercises_item'>
-            <p>Название упражнения</p>
-            <p>Длительность: 5 мин</p>
+            <p>{title}</p>
+            <p>Длительность: {duration} мин.</p>
         </li>
     )
   }

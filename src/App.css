@@ -86,12 +86,12 @@ button{
     padding:11px 15px;
 }
 
-.error{
+p.error{
 	color: red;
 	text-align: center;
 	margin-bottom: 15px;
 }
 
-.button.active{
+button.active{
 	background-color: darkgray;
 }

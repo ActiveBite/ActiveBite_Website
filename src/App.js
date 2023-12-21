@@ -20,7 +20,7 @@ function App() {
         <Route path='*' element={<NotFoundPage/>}/>  
         <Route element={<PrivateRouter/>}> 
             <Route path='/lk' element={<Lk/>}/>
-            <Route path='/training' element={<Training/>}/>
+            <Route path='/training/:training_id' element={<Training/>}/>
             <Route path='/trainings' element={<Trainings/>}/>
         </Route>
         
