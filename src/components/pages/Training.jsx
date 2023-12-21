@@ -34,6 +34,13 @@ function Training() {
         })
     }
 
+    function addToFavorite(trainingId) {
+        activebite.post('/trainings/training/add_to_favorite', {training_id: trainingId}, {withCredentials: true})
+        .then(() => {
+            setTrainingInfo({...trainingInfo, favorite: !trainingInfo.favorite})
+        })
+    }
+
     useEffect(() => {
         getTraining(trainingId)
     }, [])
@@ -47,7 +54,10 @@ function Training() {
                     <div>
                         <h2 className='training_title'>{trainingInfo.training.title}</h2>
                         <div className='training_button'>
-                            <button className={`action_button ${trainingInfo.favorite ? 'active' : ''}`}>В избранное</button>
+                            <button 
+                                className={`action_button ${trainingInfo.favorite ? 'active' : ''}`}
+                                onClick={() => addToFavorite(trainingId)}
+                            >В избранное</button>
                             <button 
                                 className={`action_button ${trainingInfo.like ? 'active' : ''}`}
                                 onClick={() => rateTraining(trainingId, 'like')}
@@ -61,10 +71,11 @@ function Training() {
                 </div>
                 <p className='training_description'>{trainingInfo.training.description}</p>
                     <ul className='list_exercises'>
-                        <Exercise />
-                        <Exercise />
-                        <Exercise />
-                        <Exercise />
+                        {
+                            trainingInfo.exercises.map(exercise => (
+                                <Exercise title={exercise.exercise_name} duration={exercise.duration}/>
+                            ))
+                        }
                     </ul>
                 <button className='start_button'>Запустить тренировку</button>
                 </>
